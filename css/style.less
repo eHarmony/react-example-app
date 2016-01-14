@@ -1,0 +1,60 @@
+@blue: #328aa1;
+@darkblue: #185772;
+@lightblue: #ace1f7;
+@green: #8fb43e;
+@red: #c02130;
+@gold: #fbb024;
+@plum: #a12945;
+.calc(@prop; @val) {
+    @{prop}: calc(~'@{val}');
+    @{prop}: -moz-calc(~'@{val}');
+    @{prop}: -webkit-calc(~'@{val}');
+    @{prop}: -o-calc(~'@{val}');
+}
+
+body { font-family: "ProximaNova", Tahoma, sans-serif; color: #333; background: #f8f8f8;}
+a { color: @blue; }
+.container { width: 960px; margin: 20px auto;}
+h1, h2, h3, h4{ font-family: Georgia; }
+.list article { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;border-radius: 3px;background:#fff; overflow:auto;}
+.list article h4 { margin: 0 0 10px; font-size: 24px}
+.list article h5 { font-weight: normal; font-size: 16px;}
+.list article div { }
+.list article img { float: left; margin-right: 10px;}
+
+article.feature-idea {border-top: 3px solid @blue; }
+article.feature-feedback { border-top: 3px solid @green; }
+article.bug-report { border-top: 3px solid @plum; }
+article.recommendation-score {border-top: 3px solid @gold; }
+
+
+.loadmore { display:block; text-transform:uppercase; text-align:center; width: 200px; margin:0 auto; padding: 20px; background:@blue; color:white; border-radius: 3px;}
+
+
+.filters { padding-bottom: 20px;}
+.filters article { width: 22%; margin: 0 1%; float:left; clear:none; border-bottom: none; cursor:pointer;}
+.filters .feedback { color: @green;}
+.filters .idea { color: @blue;}
+.filters .bug { color: @plum;}
+.filters .score { color: @gold;}
+
+.filters .graphs { overflow:auto;}
+.filters figure { width: 90px; margin: 0 0 30px; display: block; float: left; position: relative; text-align: center; line-height: 1.2; position:relative;}
+.filters figure canvas{ margin-bottom: -67px;}
+.filters figure strong { font-size: 30px; text-align: center; padding-left: 10px;}
+.filters figure strong sup { font-size: 20px; vertical-align: top;}
+.filters figcaption { float: left; .calc(width, ~"100% - 90px - 20px"); margin: 8px 0 0 20px; text-transform: uppercase; font-size: 16px; line-height: 1.2}
+.filters figcaption strong { font-weight: bold; display:block; font-size: 30px;}
+// Filter Navigation
+.filters nav { border-top: 1px solid #ccc; margin-top: 20px; padding-top: 20px; clear:both; color:#999; line-height: 28px;}
+.filters nav label { margin-right: 20px;}
+.filters nav a { display: inline-block; height: 28px; line-height: 28px; padding: 0 10px; margin: 0 6px 6px 0; border: 1px solid; color:@blue; border-radius:3px; cursor:pointer;background:white;}
+.filters nav a.active { background:@blue; color: white;}
+.filters nav a[disabled] { color: #CCC; border-color:#ccc;}
+
+.pagination { width: 100%; text-align: center; padding: 20px 0 30px;}     
+.pagination a { font-size: 16px; text-transform: uppercase; }
+.pagination a:hover { cursor: pointer; }        
+.pagination a.disabled { color: #ccc; cursor: auto}        
+.pagination a.previous { float: left; }
+.pagination a.next { float: right; }
