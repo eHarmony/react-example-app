@@ -1,0 +1,14 @@
+{
+  "name": "react-backbone-example",
+  "version": "0.0.1",
+  "description": "This shows how we can integrate Backbone + React in a simple fashion, eschewing any additional plugins, using simple javascript techniques",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.10"
+  },
+  "author": "Kaanon MacFarlane <kmacfarlane@eharmony.com>",
+  "license": "ISC"
+}
