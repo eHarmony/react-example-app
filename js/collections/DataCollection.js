@@ -1,6 +1,6 @@
 var DataCollection = Backbone.Collection.extend({
     
-    url: 'http://www.eharmony.com/lane/api.php?type=success_stories',
+    url: 'http://static.eharmony.com/lane/api.php?type=success_stories',
     
     initialize: function(){
         this.page = 1;

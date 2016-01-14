@@ -71,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var DataCollection = Backbone.Collection.extend({
 	
-	    url: 'http://www.eharmony.com/lane/api.php?type=success_stories',
+	    url: 'http://static.eharmony.com/lane/api.php?type=success_stories',
 	
 	    initialize: function () {
 	        this.page = 1;
@@ -441,4 +441,4 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ])
 });
 ;
-//# sourceMappingURL=../../build/data-viewer.map?_v=c521524b9fae8cd6aad9
+//# sourceMappingURL=../../build/data-viewer.map?_v=89dd8393f3627f2435ee
